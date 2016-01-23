@@ -3,8 +3,15 @@
 .about{
   .copy{
     padding: 4em;
+    padding-top: 9em;
+    p{
+      padding-top: 1em;
+    }
+    p.second{
+      margin-top: -5px;
+    }
     .copy-contain{
-      background: #F4F8FB;
+      background: #F7F7F7;
       padding: 2em;
       margin-bottom: 2em;
       position: relative;
@@ -13,13 +20,14 @@
         position: absolute;
         border-left: 77px solid transparent;
         border-right: -9px solid transparent;
-        border-top: 54px solid #F4F8FB;
+        border-top: 54px solid #F7F7F7;
         bottom: -30px;
         left: 0;
       }
     }
     img.sig{
       margin-left: -1.2em;
+      max-width: 170px;
     }
   }
   .image{
