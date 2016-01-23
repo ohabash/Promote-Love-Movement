@@ -1,0 +1,24 @@
+#quote{
+  height:100vh;
+  position: relative;
+  background: #fff;
+  color:#333;
+  font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+  font-size: 2em;
+  blockquote::before,
+  blockquote::after{
+    display: none;
+  }
+}
+
+
+#quote .copy {
+  @include vertical-align();
+}
+
+#quote .copy blockquote{
+  text-align: center;
+  max-width: 800px;
+  line-height: 1.2em;
+  margin: 0 auto;
+}

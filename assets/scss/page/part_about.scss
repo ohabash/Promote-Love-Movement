@@ -1,0 +1,36 @@
+
+
+.about{
+  .copy{
+    padding: 4em;
+    .copy-contain{
+      background: #F4F8FB;
+      padding: 2em;
+      margin-bottom: 2em;
+      position: relative;
+      &:after {
+        content: " ";
+        position: absolute;
+        border-left: 77px solid transparent;
+        border-right: -9px solid transparent;
+        border-top: 54px solid #F4F8FB;
+        bottom: -30px;
+        left: 0;
+      }
+    }
+    img.sig{
+      margin-left: -1.2em;
+    }
+  }
+  .image{
+    img{
+    }
+  }
+}
+@include bp(M-desktop){
+  div#smooth_about {
+    height: 100vh;
+    clear: both;
+    display: table;
+  }
+}

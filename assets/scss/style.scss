@@ -1,0 +1,33 @@
+
+@import 'inc/variable';
+@import 'inc/bootstrap-variables';
+
+
+// packages
+@import 'packages/bootstrap';
+// @import 'packages/breakpoint';
+@import 'packages/fontawesome/font-awesome';
+
+// inc
+@import 'inc/responsive';
+@import 'inc/mixins';
+@import 'inc/fonts';
+@import 'inc/colors';
+@import 'inc/omar_sass';
+@import 'inc/base';
+@import 'inc/animate';
+
+// parts
+@import 'page/part_header';
+@import 'page/part_footer';
+@import 'page/part_owl';
+@import 'page/part_home_carousel';
+@import 'page/part_about';
+@import 'page/part_wizard';
+@import 'page/part_quote';
+
+// pages
+@import 'page/home';
+@import 'page/blog';
+
+// settings

@@ -1,0 +1,96 @@
+body{
+	font-size:17px;
+	@extend .Raleway;
+}
+
+h2{
+	font-size: 4em;
+    font-weight: 100;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 2em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 47px;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+    position: relative;
+    text-align:center;
+    @extend .mt0;
+    &:after, &:before{
+    	// also defaul
+    	content: "]";
+    	font-size:1.2em;
+    	padding-left: 0.2em;
+    	opacity: 0.5;
+    	position: relative;
+    	top: 0.05em;
+    	@include ani(0, slideInRight, 1s);
+
+    }
+    &:before{
+    	@include ani(0, slideInLeft, 1s);
+    	padding-right: 0.2em;
+    	content: "[";
+    }
+}
+
+p{
+	-webkit-font-smoothing: antialiased;
+	font-weight: 200;
+    // letter-spacing: 1px;
+    line-height: 1.6em;
+}
+
+p.f{
+	text-transform: uppercase;
+	@extend .OpenS;
+	letter-spacing: 3px;
+	font-weight: bold;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+
+blockquote {
+	-webkit-font-smoothing: antialiased;
+    font-size: 1.5em;
+    letter-spacing: 1px;
+		font-family: Baskerville, 'Baskerville Old Face', 'Hoefler Text', Garamond, 'Times New Roman', serif;
+}
+
+blockquote::before {
+    content: open-quote;
+    font-size: 3em;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    font-family: "open-sans";
+    opacity: 0.3;
+}
+blockquote::after {
+	content: close-quote;
+	font-size: 3em;
+	position: absolute;
+	bottom: 16px;
+	right: 36px;
+	font-family: "open-sans";
+	opacity: 0.3;
+}
+
+.details{
+	@extend .OpenS;
+	font-size: 0.8em;
+    letter-spacing: 0.05em;
+    font-weight: 100;
+    opacity: 0.8;
+}
+
+.clearfix1{
+		// min-height:80vh;
+		max-width: 1440px;
+		margin:0 auto;
+}

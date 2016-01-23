@@ -1,0 +1,29 @@
+
+#home_carousel{
+  // height: 70vh;
+  overflow: hidden;
+  .carousel-control {
+    padding-top: 20%;
+    text-shadow: 0 0 0;
+    color: rgba(0, 0, 0, 0.04);
+    font-size: 5em;
+    i{
+      @include ease(0.1s);
+    }
+    &:hover{
+      i{
+        color: rgba(0, 0, 0, 0.14);
+      }
+    }
+  }
+  a.right.carousel-control {
+    background: transparent;
+    i{
+    }
+  }
+  a.left.carousel-control {
+    background: transparent;
+    i{
+    }
+  }
+}

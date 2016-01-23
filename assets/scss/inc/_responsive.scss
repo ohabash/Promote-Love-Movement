@@ -1,0 +1,102 @@
+$media-queries: true;
+
+
+
+
+
+@mixin bp($point) {
+  @if ($media-queries) {
+
+
+
+
+
+	// desktop
+    $bp-XL-desktop: 2560px;
+     $bp-L-desktop: 1824px;
+     $bp-M-desktop: 1440px;
+     $bp-S-desktop: 1300px;
+
+    @if $point == XL-desktop {
+      @media (max-width: #{$bp-XL-desktop}){
+        @content;
+      }
+    }
+
+    @if $point == L-desktop {
+      @media (max-width: #{$bp-L-desktop}){
+        @content;
+      }
+    }
+
+    @if $point == M-desktop {
+      @media (max-width: #{$bp-M-desktop}){
+        @content;
+      }
+    }
+
+    @if $point == S-desktop {
+      @media (max-width: #{$bp-S-desktop}){
+        @content;
+      }
+    }
+
+
+
+
+    // tablet
+    $bp-XL-tablet: 1124px;
+    $bp-L-tablet: 1024px;
+    $bp-M-tablet: 768px;
+
+    @if $point == XL-tablet {
+      @media (max-width: #{$bp-XL-tablet}){
+        @content;
+      }
+    }
+
+    @if $point == L-tablet {
+      @media (max-width: #{$bp-L-tablet}){
+        @content;
+      }
+    }
+
+    @if $point == M-tablet {
+      @media (max-width: #{$bp-M-tablet}){
+        @content;
+      }
+    }
+
+
+
+
+
+
+    // phone
+    $bp-L-phone: 600px;
+    $bp-M-phone: 480px;
+    $bp-S-phone: 320px;
+
+    @if $point == L-phone {
+      @media (max-width: #{$bp-L-phone}){
+        @content;
+      }
+    }
+
+    @if $point == M-phone {
+      @media (max-width: #{$bp-M-phone}){
+        @content;
+      }
+    }
+
+    @if $point == S-phone {
+      @media (max-width: #{$bp-S-phone}){
+        @content;
+      }
+    }
+
+
+
+
+  }
+}
