@@ -5,7 +5,7 @@
   "description": "Promote Love Descriptions",
   "main": "Gruntfile.js",
   "scripts": {
-    "test": "Test Works"
+    "test": "Test Works" 
   },
   "repository": {
     "type": "git",
